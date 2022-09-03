@@ -7,7 +7,7 @@ Primero vamos a tener que definir algunos métodos que nos permitan agregar y el
 
 Entonces, el registro debe poder manejar los siguientes métodos:
 - `agregarAbatidosDia(cantidad)`: agrega la cantidad de abatidos en un día.
-- `agregarAbatidosVariosDias(cantidad)`: agrega la lista de cantidades de abatidos en varios días, ordenada desde el más antiguo.
+- `agregarAbatidosVariosDias([cant1,cant2,...])`: agrega la lista de cantidades de abatidos en varios días, ordenada desde el más antiguo.
 - `eliminarlaCantidadDeAbatidos(cantidad)`: elimina la cantidad de abatidos en un día. ¿que pasa si varios días abatió la misma cantidad?.
 - `eliminarLasCantidadesDeAbatidos([cant1,cant2,...])`: elimina las cantidades de abatidos en varios días. Y nos preguntamos ¿que pasa si varios días abatió la misma cantidad?.
 <br>
