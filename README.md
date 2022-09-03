@@ -28,20 +28,23 @@ El registro debe ser capaz de responder las siguientes consultas:
 - `abatidosSumando(cantidad)`: la serie que resulta de sumar el valor indicado a cada valor de abatidos diaria incluido en el registro. 
 - `abatidosEsAcotada(n1,n2)`: indica si en cada día de que se tiene registro, la cantidad de abatidos se encuentra entre los valores indicados.
 - `algunDiaAbatioMasDe(cantidad)`: indica si algún día de que se tiene registro, la cantidad de abatidos es mayor al valor indicado.
+- `todosLosDiasAbatioMasDe(cantidad)`: indica si todos los días de que se tiene registro, la cantidad de abatidos es mayor al valor indicado.
 - `cantidadAbatidosMayorALaPrimera()`: la cantidad de valores de abatidos diaria que superan a la cantidad indicada para el primer día del registro.
 
 A modo de ejemplo, se indica qué debe responder el registro de abatidos a varios mensajes, si incluye el juego de seis días con valores 43,18,49,62,33,39.
  
 | mensaje | resultado esperado | 
 | --- | --- |
-| `registroProduccion.algunDiaAbatio(49)` | `true` |
-| `registroProduccion.algunDiaAbatio(52)` | `false` |
-| `registroProduccion.maximoValorDeAbatidos()` | `62` |
-| `registroProduccion.valoresDeAbatidosPares()` | `18,62` |
-| `registroProduccion.abatidosEsAcotada(10,100)` | `true` |
-| `registroProduccion.abatidosEsAcotada(20,100)` | `false` (porque 18 no está en el rango) |
-| `registroProduccion.abatidosSuperioresA(35)` | `43,49,62,39` |
-| `registroProduccion.abatidosSumando(5)` | `48,23,54,67,38,44` |
-| `registroProduccion.totalAbatidos()` | `244` |
-| `registroProduccion.ultimoValorDeAbatidos()` | `39` |
-| `registroProduccion.cantidadAbatidosMayorALaPrimera()` | `2` (los valores 49 y 62) |
+| `registroAbatidos.algunDiaAbatio(49)` | `true` |
+| `registroAbatidos.algunDiaAbatio(52)` | `false` |
+| `registroAbatidos.maximoValorDeAbatidos()` | `62` |
+| `registroAbatidos.valoresDeAbatidosPares()` | `18,62` |
+| `registroAbatidos.abatidosEsAcotada(10,100)` | `true` |
+| `registroAbatidos.abatidosEsAcotada(20,100)` | `false` (porque 18 no está en el rango) |
+| `registroAbatidos.abatidosSuperioresA(35)` | `43,49,62,39` |
+| `registroAbatidos.abatidosSumando(5)` | `48,23,54,67,38,44` |
+| `registroAbatidos.totalAbatidos()` | `244` |
+| `registroAbatidos.ultimoValorDeAbatidos()` | `39` |
+| `registroAbatidos.cantidadAbatidosMayorALaPrimera()` | `2` (los valores 49 y 62) |
+| `registroAbatidos.algunDiaAbatioMasDe(50)` | `true` |
+| `registroAbatidos.todosLosDiasAbatioMasDe(30)` | `false` |
