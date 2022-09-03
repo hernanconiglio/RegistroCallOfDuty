@@ -27,7 +27,7 @@ El registro debe ser capaz de responder las siguientes consultas:
 - `elValorDeAbatidos(cantidad)`: encuentra y retorna el valor indicado en cantidad.
 - `abatidosSumando(cantidad)`: la serie que resulta de sumar el valor indicado a cada valor de abatidos diaria incluido en el registro. 
 - `abatidosEsAcotada(n1,n2)`: indica si en cada día de que se tiene registro, la cantidad de abatidos se encuentra entre los valores indicados.
-- `algunDiaAbatio(cantidad)`: indica si algún día de que se tiene registro, la cantidad de abatidos es igual al valor indicado.
+- `algunDiaAbatioMasDe(cantidad)`: indica si algún día de que se tiene registro, la cantidad de abatidos es mayor al valor indicado.
 - `cantidadAbatidosMayorALaPrimera()`: la cantidad de valores de abatidos diaria que superan a la cantidad indicada para el primer día del registro.
 
 A modo de ejemplo, se indica qué debe responder el registro de abatidos a varios mensajes, si incluye el juego de seis días con valores 43,18,49,62,33,39.
