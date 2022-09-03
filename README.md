@@ -1,4 +1,5 @@
 # Registro de abatidos por día en el Call of Duty
+![Portada](portadaCOD.png)
 
 Se nos pide modelar un servicio en el famoso videojuego Call of Duty que permita el registro de la cantidad de abatidos por día de un jugador, sin importar la cantidad de partidas jugadas en ese día. 
 
